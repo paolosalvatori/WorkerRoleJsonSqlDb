@@ -21,7 +21,7 @@ Also look at [How to store Event Hub events to Azure SQL Database](https://code.
 # Scenario
 
 This solution simulates an Internet of Things (IoT) scenario where thousands of devices send events (e.g. sensor readings) to a backend system via a message broker. The backend system retrieves events from the messaging infrastructure and store them to a persistent repository in a scalable manner. 
-
+  
 # Architecture
 
 The sample is structured as follows:
