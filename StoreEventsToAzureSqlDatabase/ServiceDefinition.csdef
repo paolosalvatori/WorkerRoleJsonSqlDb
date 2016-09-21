@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ServiceDefinition name="StoreEventsToAzureSqlDatabase" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceDefinition" schemaVersion="2015-04.2.6">
+  <WorkerRole name="EventProcessorHostWorkerRole" vmsize="Small">
+    <ConfigurationSettings>
+      <Setting name="SqlDatabaseConnectionString" />
+      <Setting name="InsertStoredProcedure" />
+      <Setting name="StorageAccountConnectionString" />
+      <Setting name="ServiceBusConnectionString" />
+      <Setting name="EventHubName" />
+      <Setting name="ConsumerGroupName" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" />
+    </ConfigurationSettings>
+    <Imports>
+      <Import moduleName="RemoteAccess" />
+      <Import moduleName="RemoteForwarder" />
+    </Imports>
+  </WorkerRole>
+</ServiceDefinition>

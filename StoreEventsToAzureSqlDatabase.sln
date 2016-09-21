@@ -1,0 +1,74 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{4F0FD25C-509B-4A4A-894A-8EDF463626A7}"
+	ProjectSection(SolutionItems) = preProject
+		Scripts\CreateIoTDb.sql = Scripts\CreateIoTDb.sql
+		Scripts\Sample.sql = Scripts\Sample.sql
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{3F906317-6F74-4B9F-B31E-355CEF7B6D41}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documents", "Documents", "{0FB535AC-26E7-4307-B4A2-5DBEC0B08FAF}"
+	ProjectSection(SolutionItems) = preProject
+		CONTRIBUTING.md = CONTRIBUTING.md
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Images", "Images", "{3F91629F-AF41-46B6-8950-C6BEA4C94010}"
+	ProjectSection(SolutionItems) = preProject
+		Images\Client.png = Images\Client.png
+		Images\ETW01.png = Images\ETW01.png
+		Images\ETW02.png = Images\ETW02.png
+		Images\Prototype.png = Images\Prototype.png
+	EndProjectSection
+EndProject
+Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "StoreEventsToAzureSqlDatabase", "StoreEventsToAzureSqlDatabase\StoreEventsToAzureSqlDatabase.ccproj", "{66E3411B-1927-4C5C-8B6D-D75C4F54D756}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventProcessorHostWorkerRole", "EventProcessorHostWorkerRole\EventProcessorHostWorkerRole.csproj", "{AB783664-CC5E-49EE-859A-EA6B96333967}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeviceSimulator", "Sender\DeviceSimulator.csproj", "{3D6F33A1-2C1C-4B41-AEE5-1EBA0E4CADEB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "Entities\Entities.csproj", "{0FDFF587-EBBD-40B5-9842-D450CAA3973A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Helpers", "Helpers\Helpers.csproj", "{5AD1B0F5-AF59-4E66-8643-0C37D6B658E7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{66E3411B-1927-4C5C-8B6D-D75C4F54D756}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66E3411B-1927-4C5C-8B6D-D75C4F54D756}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66E3411B-1927-4C5C-8B6D-D75C4F54D756}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66E3411B-1927-4C5C-8B6D-D75C4F54D756}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB783664-CC5E-49EE-859A-EA6B96333967}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB783664-CC5E-49EE-859A-EA6B96333967}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB783664-CC5E-49EE-859A-EA6B96333967}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB783664-CC5E-49EE-859A-EA6B96333967}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D6F33A1-2C1C-4B41-AEE5-1EBA0E4CADEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D6F33A1-2C1C-4B41-AEE5-1EBA0E4CADEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D6F33A1-2C1C-4B41-AEE5-1EBA0E4CADEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D6F33A1-2C1C-4B41-AEE5-1EBA0E4CADEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FDFF587-EBBD-40B5-9842-D450CAA3973A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FDFF587-EBBD-40B5-9842-D450CAA3973A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FDFF587-EBBD-40B5-9842-D450CAA3973A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FDFF587-EBBD-40B5-9842-D450CAA3973A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AD1B0F5-AF59-4E66-8643-0C37D6B658E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AD1B0F5-AF59-4E66-8643-0C37D6B658E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AD1B0F5-AF59-4E66-8643-0C37D6B658E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AD1B0F5-AF59-4E66-8643-0C37D6B658E7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="StoreEventsToAzureSqlDatabase" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="4" osVersion="*" schemaVersion="2015-04.2.6">
+  <Role name="EventProcessorHostWorkerRole">
+    <Instances count="2" />
+    <ConfigurationSettings>
+      <Setting name="SqlDatabaseConnectionString" value="[AZURE SQL DATABASE CONNECTION STRING]" />
+      <Setting name="InsertStoredProcedure" value="sp_InsertJsonEvents"/>
+      <Setting name="StorageAccountConnectionString" value="[STORAGE ACCOUNT CONNECTION STRING]" />
+      <Setting name="ServiceBusConnectionString" value="[SERVICE BUS CONNECTION STRING]" />
+      <Setting name="EventHubName" value="[EVENT HUB NAME]" />
+      <Setting name="ConsumerGroupName" value="[CONSUMER GROUP NAME]" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.Enabled" value="true" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountUsername" value="Paolos" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountEncryptedPassword" value="MIIBkwYJKoZIhvcNAQcDoIIBhDCCAYACAQAxggFEMIIBQAIBADAoMBQxEjAQBgNVBAMTCUJhYm9BenVyZQIQX/3wrRZcRYlETShhifrl4TANBgkqhkiG9w0BAQEFAASCAQBibAsLrm+R9QioOOhKYMGrtYdneRAlg/Git8GyXV3rIm+LU1ghsLZNiZ86qGYevNyI8Br2iwnFA2CDHmcgkxO62/AZPJyaTC5CknQubYyho58wrLghQwYxdQZIUiZcG6oOrbUC+4esC4w6TvmEFIhV3AqI0DGCjvts8qVpWyduxeYvv4g/NanJRjGKK0FQLaDs9iCd8xGfxcWeaHLQ4cDqke9jvxdQ0G0WwBDkcd1rQs7JOL+St+fJCBU6YEOOjs54i6XGJe81acg/zhk+ZWnEoYDUWmQ3nouLwtcsn2+Uvy6hpnKpf5lQTjxE24vT+1uMYpxd3qV8KhXRYQSvQfQMMDMGCSqGSIb3DQEHATAUBggqhkiG9w0DBwQI3J5enozJ+ouAEE6jpU90NShFIYBz+ZzMBlI=" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountExpiration" value="2040-02-11T23:59:59.0000000+01:00" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteForwarder.Enabled" value="true" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="[STORAGE ACCOUNT CONNECTION STRING]" />
+    </ConfigurationSettings>
+    <Certificates>
+      <Certificate name="Microsoft.WindowsAzure.Plugins.RemoteAccess.PasswordEncryption" thumbprint="4AEA75244040D33F6E51ACD64594CB0727302507" thumbprintAlgorithm="sha1" />
+    </Certificates>
+  </Role>
+</ServiceConfiguration>
